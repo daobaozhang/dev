@@ -62,7 +62,27 @@ Free LLM Scanner 是一个**轻量级、隐私优先**的 LLM 模型聚合与检
     *   **Linux/Mac**: `python web_app.py`
 3.  访问：`http://localhost:8000`
 
----
+# 更多 Key 请参考 scan_free_models.py 中的配置项
+##📁  scan_free_models.py 文件说明
+scan_free_models.py: 核心扫描逻辑，支持 OpenRouter 和 GitHub Models。
+
+web_app.py: 基于 Flask 的前端展示界面。
+
+docker-compose.yml: 用于快速容器化部署。
+
+data/: 存放访问统计和扫描结果。
+
+##🔧 环境变量配置
+
+创建 .env 文件并填入以下 Key 以启用更多供应商检测：
+
+Plaintext
+
+MISTRAL_API_KEY=your_key
+
+GROQ_API_KEY=your_key
+
+COHERE_API_KEY=your_key
 
 ## 🔒 隐私声明 (Privacy)
 
@@ -86,6 +106,10 @@ Free LLM Scanner 是一个**轻量级、隐私优先**的 LLM 模型聚合与检
 *   **v1.5**: 增加智能搜索功能。
 *   **v2.0**: UI 重构，增加自动连通性检测，支持 Docker 部署。
 =======
+## 界面截图
+<img width="1291" height="1253" alt="1bafe5cb-490b-4dc2-8334-4371043c4a0c" src="https://github.com/user-attachments/assets/2a6af64a-44c3-4c83-98df-31284d6eb63e" />
+
 # dev
 opencode
 >>>>>>> 961a36272e218c64c544cf4fadbc0fa1e13f1c06
+
